@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="intro">
+    <h2>Welcome to My Blog</h2>
+    <p>This is a boilerplate blog built with Jekyll for GitHub Pages. Here you'll find my thoughts, tutorials, and more.</p>
+</div>
+
+<div class="posts-container">
+    {% for post in site.posts %}
+    <div class="post-tile">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p class="post-excerpt">{{ post.excerpt }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<button id="show-more-btn">Show More</button>

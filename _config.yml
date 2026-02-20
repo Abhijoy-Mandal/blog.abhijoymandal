@@ -1,0 +1,16 @@
+title: "My Blog"
+description: "A simple Jekyll blog"
+url: "https://yourusername.github.io"
+baseurl: "/blog.abhijoymandal"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
