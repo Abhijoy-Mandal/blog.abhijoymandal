@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     showMoreBtn.addEventListener('click', function() {
         const nextVisible = visibleCount + 10;
         for (let i = visibleCount; i < nextVisible && i < tiles.length; i++) {
-            tiles[i].style.display = 'block';
+            tiles[i].style.display = 'flex';
         }
         visibleCount = nextVisible;
         if (visibleCount >= tiles.length) {
