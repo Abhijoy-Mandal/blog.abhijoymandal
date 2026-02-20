@@ -10,7 +10,7 @@ layout: default
 <div class="posts-container">
     {% for post in site.posts %}
     <a href="{{ site.baseurl }}{{ post.url }}" class="post-tile">
-        <img src="{{ post.thumbnail | default: 'https://via.placeholder.com/200x120/667eea/ffffff?text=Thumbnail' }}" alt="Post thumbnail" class="post-thumbnail">
+        <img src="{{ post.thumbnail | default: 'https://www.pexels.com/photo/hiker-standing-on-rock-by-abyss-26630905/' }}" alt="Post thumbnail" class="post-thumbnail">
         <div class="post-content">
             <h3>{{ post.title }}</h3>
             <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
