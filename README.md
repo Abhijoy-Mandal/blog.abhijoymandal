@@ -17,6 +17,16 @@ This is a Jekyll-based blog boilerplate for GitHub Pages.
 - Add new posts to the `_posts/` folder.
 - File name format: `YYYY-MM-DD-title.md`
 - Include front matter: `layout: default`, `title: "Post Title"`, `date: YYYY-MM-DD`
+- Optional: Add a `thumbnail` field in front matter for custom thumbnail image URL
+
+### Custom Thumbnails
+
+To use custom thumbnails, add to the post front matter:
+```
+thumbnail: /path/to/your/image.jpg
+```
+
+Then update the tile HTML to use `{{ post.thumbnail | default: 'https://via.placeholder.com/200x120/667eea/ffffff?text=Thumbnail' }}`
 
 ### Features
 
